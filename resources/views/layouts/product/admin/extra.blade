@@ -1,0 +1,21 @@
+@extends('layouts.admin.app')
+@section('content')
+<div class="row card-box here">
+    <div class="clonnable">
+        <input type="text" class="form-control">
+        <a class="add btn btn-primary">+</a>
+        <a class="remove btn btn-primary">-</a>
+    </div>
+</div>
+@endsection
+@section('script')
+<script>
+    $('.add').on('click',function(){
+        var one = $(this).parent().clone();
+        $('.here').append(one);
+    });
+    $('.remove').on('click',function(){
+        var one = $(this).parent().remove();
+    });
+</script>
+@endsection
