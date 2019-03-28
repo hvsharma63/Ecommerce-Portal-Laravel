@@ -1,5 +1,5 @@
 <div class="footer-container footer-color color">
-	<div class="block-footer-bottom">
+	<!-- <div class="block-footer-bottom">
 		<div class="container">
 			<div class="main">
 				<div class="footer">
@@ -7,8 +7,6 @@
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 							<div class="collapsible mobile-collapsible collapsible_01 clearfix">
 								<img class="img-responsive" alt="" src="{{URL('resources/assets/front_images/template1/logo-footer.png')}}" />
-								<p class="selecter">Abani - Multi Purpose eCommerce</p>
-								<p class="selecter">PSD Template</p>
 								<div class="block1 block-content-statick">
 									<ul class="list-inline">
 										<li>
@@ -115,14 +113,14 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="block-footer-copyright">
 		<div class="container">
 			<div class="footer">
 				<div class="main">
 					<div class="row"> 
-						<address>© 2015 Designed by <a class="active" href="#">Math Tran</a> - All rights reserved.</address>
-						<div class="paypal"><img class="img-responsive" alt="" src="{{URL('resources/assets/front_images/paypal.png')}}" /></div>
+						<address>© 2019 Designed by <a class="active" href="#">KH-Tech</a> - All rights reserved.</address>
+						<!-- <div class="paypal"><img class="img-responsive" alt="" src="{{URL('resources/assets/front_images/paypal.png')}}" /></div> -->
 					</div>
 				</div>
 			</div>

@@ -21,17 +21,27 @@
 										<label for="username">Email address <span class="required">*</span></label>
 										<input type="text" class="input-text" name="email" id="email">
 									</p>
+									@if ($errors->has('email'))
+									<span class="help-block label label-warning errorText">
+										<strong>{{ $errors->first('email') }}</strong>
+									</span>
+									@endif
 									<p class="form-row">
 										<label for="password">Password <span class="required">*</span></label>
 										<input class="input-text" type="password" name="password" id="password">
 										<input class="input-text" type="hidden" name="userSide" value="userOnly">
 									</p>
-									<p class="form-row">
+									@if ($errors->has('password'))
+									<span class="help-block label label-warning errorText">
+										<strong>{{ $errors->first('password') }}</strong>
+									</span>
+									@endif
+									<!-- <p class="form-row">
 										<a class="lost_username" href="#">Forgot your username?</a>
 									</p>
 									<p class="form-row">
 										<a class="lost_password" href="#">Forgot your password?</a>
-									</p>
+									</p> -->
 									<div class="clear"></div>
 									<div class="checkout-col-footer">
 										<input type="submit" class="button btn-step" name="login" value="Login">

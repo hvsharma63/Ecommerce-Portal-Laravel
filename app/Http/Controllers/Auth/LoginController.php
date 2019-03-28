@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Session;
 use App\Cart;
+use Validator;
 
 class LoginController extends Controller
 {
@@ -46,6 +47,18 @@ class LoginController extends Controller
     }
     public function login(Request $request)
     {
+        $this->validateLogin($request);
+
+
+        //  $v = Validator::make($request->all(), 
+        //     [
+        //         "email"=>'required',
+        //         "password"=>'required',
+        //     ]);
+        // if ($v->fails())
+        // {
+        //     return redirect()->back()->withErrors($v->errors());
+        // }
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             return redirect('/viewCart/cartProcess');
@@ -55,6 +68,15 @@ class LoginController extends Controller
             return redirect()->back();
         }
     }
+    protected function validateLogin(Request $request)
+    {
+        $request->validate([
+            $this->username() => 'required|string',
+            'password' => 'required|string',
+        ]);
+        // return $this->sendFailedLoginResponse($request);
+    }
+
     public function logout(Request $request)
     {
 

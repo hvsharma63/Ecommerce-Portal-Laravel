@@ -49,7 +49,7 @@
 							</table>
 						</td>
 						<td class="wish-list-control">
-							{{$productlist['productPrice']}}
+							${{$productlist['productPrice']}}
 							<div class="number-input">
 								<button type="button" class="minus" title="{{$productlist['productId']}}" onkeypress="return onlyNum(event)">-</button>
 								<input type="text" class="qty" value="{{$productlist['productQty']}}" name="qty" id="qty" >
@@ -59,7 +59,7 @@
 							<!-- <div class="edit_control"><button type="button" class="btn-edit"><i class="icon-note"></i> Edit</button></div> -->
 						</td>
 						<td id="divSub{{$productlist['productId']}}">
-							<p align="center" id="divSubChange{{$productlist['productId']}}">{{$productlist['productSubTotal']}}</p>
+							<p align="center" id="divSubChange{{$productlist['productId']}}">${{$productlist['productSubTotal']}}</p>
 						</td>
 					</tr>
 					</tr>

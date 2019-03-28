@@ -25,7 +25,7 @@ class ProductController extends Controller
     }
     public function store(Request $request)
     {
-        return ($request->all());    
+        // return ($request->all());    
         $v = Validator::make($request->all(), 
             [
                 "thumbnail"=>'required|mimes:jpg,jpeg,png',
@@ -277,8 +277,16 @@ class ProductController extends Controller
         }else{
             $product->fill($request->all())->save();
         }
+        if(empty($request->imageOldArray))
+            $imageOldArray=array();
+        else
+            $imageOldArray=$request->imageOldArray;
+        if(empty($request->imageArray))
+            $imageArray=array();
+        else
+            $imageArray=$request->imageArray;
 
-        $imgDiff=array_diff($request->imageOldArray, $request->imageArray);
+        $imgDiff=array_diff($imageOldArray, $imageArray);
         if(!empty($imgDiff))
         {
             $file_path = base_path('resources\assets\products\\'.$id.'\\'); 
@@ -353,7 +361,7 @@ class ProductController extends Controller
     {
         $categories=Category::whereNotIn('status',['N','T'])->get();
 
-        $colors = DB::select( DB::raw("SELECT c.id, c.colorName,c.colorHash, (SELECT count(*)  FROM products p WHERE p.colorId = c.id) AS colorCount  FROM colors c Where status not in ('N','T')") );
+        $colors = DB::select( DB::raw("SELECT c.id, c.colorName,c.colorHash, (SELECT count(*)  FROM products p WHERE p.colorId = c.id and p.status not in ('N','T')) AS colorCount  FROM colors c Where status not in ('N','T')") );
         $products = Product::paginate(2);
         return view('layouts.product.frontend.productList')->with(compact('categories','colors','products'));
     }

@@ -10,16 +10,16 @@
 						<div class="bx-caption play start">
 							<div class="container">
 								<div class="text-slide">
-									<p class="fa fa-apple caption6">
+									<!-- <p class="fa fa-apple caption6">
 										<span class="hidden">hidden</span>
-									</p>
-									<h3 class="caption1">iPhone 6</h3>
+									</p> -->
+									<!-- <h3 class="caption1">iPhone 6</h3>
 									<h3 class="caption2">iPhone 6 at its largest.</h3>
 									<h2 class="caption3">And thinnest.</h2>
 									<p class="icon-anchor icons caption5">
 										<span class="hidden">hidden</span>
 									</p>
-									<h2 class="caption4"><a href="#" class="btn-shop">Learn more</a></h2>
+									<h2 class="caption4"><a href="#" class="btn-shop">Learn more</a></h2> -->
 								</div>
 							</div>
 						</div>
@@ -28,22 +28,22 @@
 						<a  href="#"> <img src="{{URL('resources/assets/front_images/banner/2.png')}}" alt="magicslider"> </a>
 						<div class="bx-caption ">
 							<div class="container">
-								<div class="text-slide">
+								<!-- <div class="text-slide">
 									<h3 class="caption1">Beats Audio</h3>
 									<h3 class="caption2">Acquire Beats Music & </h3>
 									<h2 class="caption3">Beats Electronics</h2>
 									<p class="icon-anchor icons caption5"><span class="hidden">hidden</span></p>
 									<h2 class="caption4"><a href="#" class="btn-shop">Learn more</a></h2>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
 					<div class="item"> 
-						<a  href="#"> <img src="{{URL('resources/assets/front_images/template1/slide_v2_2.jpg')}}" alt="magicslider"> </a>
+						<a  href="#"> <img src="{{URL('resources/assets/front_images/banner/3.png')}}" alt="magicslider"> </a>
 						<div class="bx-caption ">
 							<div class="container">
 								<div class="text-slide">
-									<p class="fa fa-apple caption6">
+									<!-- <p class="fa fa-apple caption6">
 										<span class="hidden">hidden</span>
 									</p>
 									<h3 class="caption1">iPhone 6</h3>
@@ -52,81 +52,12 @@
 									<p class="icon-anchor icons caption5">
 										<span class="hidden">hidden</span>
 									</p>
-									<h2 class="caption4"><a href="#" class="btn-shop">Learn more</a></h2>
+									<h2 class="caption4"><a href="#" class="btn-shop">Learn more</a></h2> -->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div><!--#slider-index-->
-			</div>
-		</div>
-	</div>
-	<div class="alo-block-static clearfix">
-		<div class="container-none">
-			<div class="block-banner block-banner-home">
-				<div class="container-content">
-					<div class="banner-col banner-col-1">
-						<div class="banner-col banner-col-1-1">
-							<a href="#"><img class="img-responsive" alt="Sample banner" src="{{URL('resources/assets/front_images/template1/V2_01.jpg')}}" /></a>
-							<div class="text-middle banner-center"><p class="text-middle1">Beats by Dr. Dre Studio Wireless</p><p class="text-middle1">Over-Ear Headphones</p></div>
-						</div>
-						<div class="banner-col banner-col-1-2">
-							<img class="img-responsive" alt="Sample banner" src="{{URL('resources/assets/front_images/template1/V2_02.jpg')}}" />
-							<div class="text-middle banner-center"><a class="button-custom button-custom-now btn-lg" href="#">shop now</a></div>
-						</div>
-						<div class="banner-col banner-col-1-3">
-							<a href="#"><img class="img-responsive" alt="Sample banner" src="{{URL('resources/assets/front_images/template1/V2_03.jpg')}}" /></a>
-							<div class="text-middle banner-center">
-								<h2>iPod touch</h2>
-								<p class="text-middle3">Powerful apps included.</p>
-								<p class="text-middle3">Get right to work. And play.</p>
-							</div>
-						</div>
-					</div>
-					<div class="banner-col banner-col-2">
-						<div class="banner-col banner-col-2-1">
-							<a href="#"><img class="img-responsive" alt="Sample banner" src="{{URL('resources/assets/front_images/template1/V2_04.jpg')}}" /></a>
-							<div class="text-middle banner-center">
-								<h2><strong>iPod</strong> Stuffle</h2>
-								<p class="text-middle3">There&rsquo;s an apple iPod Stuffle</p>
-								<p class="text-middle3">for everyone.</p>
-							</div>
-						</div>
-						<div class="banner-col banner-col-2-2">
-							<img class="img-responsive" alt="Sample banner" src="{{URL('resources/assets/front_images/template1/V2_05.jpg')}}" />
-							<div class="text-middle banner-center">
-								<h2>iMac Retina 5K</h2>
-								<p class="text-middle5">14.7 mililion pixel. and the</p>
-								<p class="text-middle5">power to do beautiful things with</p>
-								<p class="text-middle5">theme.</p> 
-								<a class="button-custom button-custom-now btn-lg" href="#">shop now</a>
-							</div>
-						</div>
-					</div>
-					<div class="banner-col banner-col-3">
-						<div class="banner-col banner-col-3-1">
-							<img class="img-responsive" alt="Sample banner" src="{{URL('resources/assets/front_images/template1/V2_06.jpg')}}" />
-							<div class="text-middle banner-center">
-								<h2>iPhone 6</h2>
-								<p class="text-middle6">iPhone at its lagest.</p>
-								<p class="text-middle6">and thinnest.</p> 
-								<a class="button-custom button-custom-now btn-lg" href="#">shop now</a>
-							</div>
-						</div>
-						<div class="banner-col banner-col-3-2">
-							<img class="img-responsive" alt="Sample banner" src="{{URL('resources/assets/front_images/template1/V2_07.jpg')}}" />
-							<div class="text-middle banner-center">
-								<h2>Apple EarPods.</h2>
-								<p class="text-middle7">Completely re-imagined</p>
-								<p class="text-middle7">from the sound up.</p> 
-								<a class="button-custom button-custom-now btn-lg" href="#">shop now</a>
-							</div>
-						</div>
-						<div class="banner-col banner-col-3-3">
-							<a href="#"><img class="img-responsive" alt="Sample banner" src="{{URL('resources/assets/front_images/template1/V2_08.jpg')}}" /></a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -1204,36 +1135,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="block-static block_testimonials">
-		<div class="testimonials">
-			<div class="container">
-				<div>
-					<div id="testimonial">
-						<div class="block-title-tabs"></div>
-						<ul class="testimonial">
-							<li>
-								<div class="testimonial_text">
-									<p class="fa-over"><i class="fa fa-quote-right"></i></p> 
-									<span class="sub-text"> Coming together is a beginning, keeping together is progress, working together is success. </span>
-									<p class="title-name">our clients say</p>
-									<p class="name">Creative Designer</p>
-								</div>
-							</li>
-							<li>
-								<div class="testimonial_text">
-									<p class="fa-over"><i class="fa fa-quote-right"></i></p> 
-									<span class="sub-text"> “ nouthemes.com exists to help you get the most out of your software - ecommerce store.” </span>
-									<p class="title-name">NOUTHEMES</p>
-									<p class="name">Creative Designer</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="actions"></div>
 				</div>
 			</div>
 		</div>

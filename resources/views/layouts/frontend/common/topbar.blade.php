@@ -84,10 +84,10 @@
                             <div class="top-links-alo">
                                 <div class="header-top-link">
                                     <ul class="links">
-                                        <li><a href="#" title="My Account" >My Account</a></li>
+                                        <!-- <li><a href="#" title="My Account" >My Account</a></li> -->
                                         <li><a href="{{ route('productFront.getViewCartProduct') }}" title="My Cart" >My Cart</a></li>
-                                        <li ><a href="{{ route('productFront.checkout') }}" title="Checkout" class="top-link-checkout">Checkout</a></li>
                                         @if (Auth::user()!=NULL)                    
+                                        <li ><a href="{{ route('productFront.checkout') }}" title="Checkout" class="top-link-checkout">Checkout</a></li>
                                         <li class=" last" ><a href="{{ route('logout') }}"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();" title="Log In" >Log Out</a>
                                         </li>

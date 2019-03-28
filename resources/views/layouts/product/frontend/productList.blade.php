@@ -68,7 +68,7 @@
 							</div><!--- .sidebar-->
 							<div class="col-main col-lg-9 col-md-9 content-color color">
 								<div class="page-title category-title">
-									<h1>Laptop</h1>
+									<h1>Laptops</h1>
 								</div>
 								<p class="category-image"><img src="http://placehold.it/875x360" alt="Men" title="Men"></p>
 								<div class="category-products">
@@ -86,19 +86,19 @@
 													<option value="name"> Name</option>
 													<option value="price"> Price</option>
 												</select>
-												<a href="#" title="Set Descending Direction"><img src="assets/images/i_asc_arrow.gif" alt="Set Descending Direction" class="v-middle"></a>
+												<!-- <a href="#" title="Set Descending Direction"><img src="assets/images/i_asc_arrow.gif" alt="Set Descending Direction" class="v-middle"></a> -->
 											</div>
-											<div class="limiter">
+											<!-- <div class="limiter">
 												<label>Show</label> 
 												<select>
 													<option value="9" selected="selected"> 9</option>
 													<option value="12"> 12</option>
 													<option value="15"> 15</option>
 												</select>
-											</div>
+											</div> -->
 											<div class="pager">
 												<div class="pages">
-													<strong>Page:</strong>
+													<!-- <strong>Page:</strong> -->
 													<ol>
 													{{-- {{$products->links()}} --}}
 														{{-- <li class="current">1</li>
@@ -145,6 +145,7 @@
 	var view='';
 	getData(value='list');
 	function getData(value='NULL') {
+		jQuery('#LoadingModal').modal({backdrop: 'static', keyboard: false})
 		if(value!='NULL')
 		{
 			view = value;
@@ -176,6 +177,7 @@
 			getColor.push(this.value);
 		}).get();
 
+
 		var request = jQuery.ajax({
 			url: '{{ route('productFront.filterData') }}',
 			type: 'POST',
@@ -183,6 +185,7 @@
 			dataType: 'html'
 		});
 		request.done(function(response){
+			jQuery('#LoadingModal').modal('hide');
 			jQuery('#productList').html(response);
 		});
 		request.fail(function(){
@@ -191,7 +194,7 @@
 	}
 
 	function cartListing(productId) {
-		jQuery('#LoadingModal').modal({backdrop: 'static', keyboard: false})   	
+		jQuery('#LoadingModal').modal({backdrop: 'static', keyboard: false})
 		var request = 
 		jQuery.ajax({
 			url: '{{ route('productFront.getProduct') }}',
@@ -210,6 +213,7 @@
 				hideAfter: 5000,
 				stack: 3
 			});
+			jQuery('#LoadingModal').modal('hide');
 		});
 		request.fail(function(){
 			alert("Something went wrong. Try again.");

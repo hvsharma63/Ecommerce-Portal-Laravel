@@ -26,12 +26,12 @@
 					<div class="product-primary products-textlink clearfix">
 						<h2 class="product-name"><a href="{{ route('productDetail',['id'=>$product->id]) }}" title="Configurable Product">{{$product->name}}</a></h2>
 						<div > <span class="regular-price"> <h3 class="price">Ram <span class="separator">:</span>{{$product->ram}}</h3> </span></div>
-						<div > <span class="regular-price"> <h3 class="price">Battery <span class="separator">:</span>{{$product->battery}}</h3> </span></div>
+						<div > <span class="regular-price"> <h3 class="price">Battery <span class="separator">:</span>{{$product->battery}} mAh</h3> </span></div>
 						<div > <span class="regular-price"> <h3 class="price">Processor<span class="separator">:</span>{{$product->processor}}</h3> </span></div>
-						<div> <h3 class="regular-price"> <span class="price">Rs. {{$product->price}}</span> </h3></div>
+						<div> <h3 class="regular-price"> <span class="price">$ {{$product->price}}</span> </h3></div>
 					</div>
 					<div class="desc std">
-						<p>Aliquam condimentum pharetra metus sed posuere. Ut euismod nisl sit amet enim consectetur volutpat. Nulla vitae magna dictum, adipiscing mauris eu, gravida tellus. Nulla tempor, felis feugiat fermentum suscipit.</p>
+						<!-- <p>Aliquam condimentum pharetra metus sed posuere. Ut euismod nisl sit amet enim consectetur volutpat. Nulla vitae magna dictum, adipiscing mauris eu, gravida tellus. Nulla tempor, felis feugiat fermentum suscipit.</p> -->
 					</div>
 					<div class="product-secondary actions-no actions-list clearfix">
 						<p class="action">

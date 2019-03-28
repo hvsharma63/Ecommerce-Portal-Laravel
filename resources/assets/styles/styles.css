@@ -486,7 +486,7 @@ p.required{font-size:11px;text-align:right;color:#EB340A}
 .sorter .view-mode a.active,.sorter .view-mode a:hover{color: #2a2a2a;background-color: #fff;}
 .sorter .view-mode a .icons,.sorter .view-mode strong .icons{font-size:18px; vertical-align: middle;}
 .sorter .view-mode a.list .icons{color: #888889;}
-.sorter .sort-by{float: none;margin: 0;padding-right: 15px;display: inline-block;}
+.sorter .sort-by{float: left;margin: 0;padding-right: 15px;display: inline-block;}
 .sorter .sort-by label{vertical-align:middle}
 .sorter .sort-by select,.limiter select{background-color: #fff;;color:#252525;font-size:14px;border: 1px solid #dddedf;padding:5px 5px;text-align:left;vertical-align:middle;margin: 7px 0;}
 .sorter .limiter{ float: none;margin:0;padding: 0 0 0 15px;display: inline-block;}

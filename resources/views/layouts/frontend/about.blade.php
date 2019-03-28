@@ -4,13 +4,6 @@
 @endsection
 @section('content')
 <div class="main-container col1-layout content-color color">
-	<div class="about-us-top">
-		<div class="title">
-			<div class="top">About us</div>
-			<h1>We are Abani</h1>
-			<div class="bottom">Professional template for shop</div>
-		</div>
-	</div><!--- .about-us-top-->
 	<div class="breadcrumbs">
 		<div class="container">
 			<ul>

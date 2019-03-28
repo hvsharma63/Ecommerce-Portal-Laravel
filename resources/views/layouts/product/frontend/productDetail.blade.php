@@ -34,6 +34,7 @@
 												title="Short Sleeve Dress" />
 											</div>
 										</div><!--- .product-image-->
+											@if(isset($productImages))
 										<div class="more-views">
 											<h2>More Views</h2>
 											<ul class="product-image-thumbs">
@@ -50,6 +51,7 @@
 												@endforeach
 											</ul>
 										</div><!--- .more-views -->
+											@endif
 									</div><!--- .product-img-content-->
 								</div><!--- .product-img-box-->
 								<div class="product-shop col-md-7 col-sm-7 col-xs-12">
@@ -68,7 +70,6 @@
 											<h2>Ram:{{$product->ram}}</h2>
 											<h2>Battery:{{$product->battery}}</h2>
 											<h2>Processor:{{$product->processor}}</h2>
-											<p>Aliquam condimentum pharetra metus sed posuere. Ut euismod nisl sit amet enim consectetur volutpat. Nulla vitae magna dictum, adipiscing mauris eu, gravida tellus. Nulla tempor, felis ...</p>
 										</div>
 										<div class="add-to-box">
 											<div class="product-qty">
@@ -96,6 +97,7 @@
 @section('script')
 <script type="text/javascript">
 	function cartListing(productId) {
+		jQuery('#LoadingModal').modal({backdrop: 'static', keyboard: false})
 		var qty = jQuery('#qty').val();
 		console.log(productId);
 		var request = jQuery.ajax({
@@ -105,7 +107,6 @@
 		});
 		request.done(function(response){
 			jQuery('#cart-sidebar').html(response);
-
 			jQuery.toast({
 				heading: 'Well done!',
 				showHideTransition: 'slide',
@@ -116,6 +117,7 @@
 				hideAfter: 5000,
 				stack: 3
 			});
+			jQuery('#LoadingModal').modal('hide');
 		});
 		request.fail(function(){
 			alert("Something went wrong. Try again.");

@@ -12,22 +12,15 @@
 				</div>
 				<div class="actions-no hover-box">
 					<div class="actions">
-						<button type="button" title="Add to Cart" class="button btn-cart pull-left" onclick="cartListing({{$product->id}})"><span><i class="icon-handbag icons"></i><span>Add to Cart</span></span></button>
-						<ul class="add-to-links pull-left">
-							<li class="pull-left"><a href="#" title="Add to Wishlist" class="link-wishlist"><i class="icon-heart icons"></i>Add to Wishlist</a></li>
-							<li class="pull-left"><a href="#" title="Add to Compare" class="link-compare"><i class="icon-bar-chart icons"></i>Add to Compare</a></li>
-							<li class="link-view pull-left"> <a title="Quick View" href="#" class="link-quickview"><i class="icon-magnifier icons"></i>Quick View</a></li>
-						</ul>
+						<button type="button" title="Add to Cart" class="button btn-cart" onclick="cartListing({{$product->id}})"><span><i class="icon-handbag icons"></i><span>Add to Cart</span></span></button>
 					</div>
 				</div>
 			</div>
 			<div class="product-info products-textlink clearfix">
 				<h2 class="product-name"><a href="{{ route('productDetail',['id'=>$product->id]) }}" title="Configurable Product">{{$product->name}}</a></h2>
-				<ul class="configurable-swatch-list configurable-swatch-color clearfix">
-					<li class="option-blue is-media"> <a href="javascript:void(0)" name="blue" class="swatch-link swatch-link-92 has-image" title="blue"> <span class="swatch-label"> <img src="assets/images/blue.png" alt="blue" height="15" width="15"> </span> </a></li>
-					<li class="option-red is-media"> <a href="javascript:void(0)" name="red" class="swatch-link swatch-link-92 has-image" title="red"> <span class="swatch-label"> <img src="assets/images/red.png" alt="red" height="15" width="15"> </span> </a></li>
-				</ul>
-				<div class="price-box"> <span class="regular-price"> <span class="price">${{$product->price}}</span> </span></div>
+				<div > <span class="regular-price"> <h3 class="price">Ram <span class="separator">:</span>{{$product->ram}}<span class="separator">|</span>Battery <span class="separator">:</span>{{$product->battery}} mAh</h3> </span></div>
+				<div > <span class="regular-price"> <h3 class="price">Processor<span class="separator">:</span>{{$product->processor}}</h3> </span></div>
+				<div> <h3 class="regular-price"> <span class="price">$ {{$product->price}}</span> </h3></div>
 			</div>
 		</div>
 	</li>	

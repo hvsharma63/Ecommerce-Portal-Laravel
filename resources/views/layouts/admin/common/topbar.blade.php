@@ -19,16 +19,16 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
                         <div class="dropdown-item noti-title">
-                            <h5 class="text-overflow"><small>Welcome ! HR</small> </h5>
+                            <h5 class="text-overflow"><small>Welcome {{Auth::user()->firstName}} {{Auth::user()->lastName}}</small> </h5>
                         </div>
 
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <!-- <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="zmdi zmdi-account-circle"></i> <span>Profile</span>
                         </a>
 
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="zmdi zmdi-settings"></i> <span>Settings</span>
-                        </a>
+                        </a> -->
                         <a class="dropdown-item notify-item" href="{{ route('logout') }}"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >
                         <i class="zmdi zmdi-power"></i> <span>Logout</span>
